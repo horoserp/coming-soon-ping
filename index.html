@@ -50,6 +50,13 @@
       rel="stylesheet"
     />
 
+    <!-- FontAwesome -->
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"
+    />
+
     <!-- My Stylesheet -->
     <link rel="stylesheet" href="./style.css" />
 
@@ -58,6 +65,67 @@
   </head>
 
   <body>
-    <main></main>
+    <header class="header">
+      <img
+        class="logo"
+        src="./assets/images/logo.svg"
+        alt="Ping logo which is the word 'Ping'"
+        width="86"
+        height="26"
+      />
+    </header>
+    <main class="main">
+      <article class="launch">
+        <h1 class="title">We are launching soon!</h1>
+        <p class="content">Subscribe and get notified</p>
+        <form id="form" action="#" autocomplete="off">
+          <div class="signup">
+            <label class="sr-only" for="email">Your Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="Email Address"
+              placeholder="Your email address..."
+              autocomplete="off"
+              aria-autocomplete="both"
+              aria-haspopup="false"
+            />
+          </div>
+          <div class="error-message"></div>
+          <input type="submit" id="submit" value="Notify Me" />
+        </form>
+        <img
+          class="stat-page"
+          src="./assets/images/illustration-dashboard.png"
+          alt="A landing page with four stat blocks and sidebar navigation."
+          width="1280"
+          height="782"
+        />
+      </article>
+    </main>
+    <footer class="footer">
+      <ul class="social-links">
+        <!-- Aria labels are included as the i tag does not support alt text. -->
+        <li>
+          <a href="https://www.facebook.com/" aria-label="Ping's Facebook page">
+            <i class="fa fa-facebook-f" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://x.com/" aria-label="Ping's Twitter page">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/"
+            aria-label="Ping's Instagram page"
+          >
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+      <p>&copy; Copyright Ping. All rights reserved.</p>
+    </footer>
   </body>
 </html>
