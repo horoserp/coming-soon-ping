@@ -48,13 +48,23 @@ body {
   align-items: center;
   height: fit-content;
   text-align: center;
-  padding: 5%;
+  padding: 10%;
+}
+
+:where(#email, #submit) {
+  width: 80%;
 }
 
 .stat-page {
-  width: 90vw;
+  width: 80vw;
   height: 500px;
   object-fit: contain;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
 }
 
 /* Extra small devices [iPhone SE - 375](phones, 600px and down) */
