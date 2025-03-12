@@ -21,6 +21,7 @@
 
 .w700 {
   font-weight: 700;
+  color: black;
 }
 
 /* CSS Variables */
@@ -51,8 +52,28 @@ body {
   padding: 10%;
 }
 
+:where(.title, .content, .copyright) {
+  color: var(--Gray);
+}
+
 :where(#email, #submit) {
   width: 80%;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+#email {
+  border: 1px solid var(--Pale-Blue);
+  &::placeholder {
+    color: var(--Pale-Blue);
+  }
+}
+
+#submit {
+  border: none;
+  color: white;
+  background-color: var(--Blue);
+  box-shadow: 0px 5px 20px -5px var(--Blue);
 }
 
 .stat-page {
@@ -64,7 +85,23 @@ body {
 .social-links {
   display: flex;
   justify-content: center;
+}
+
+.social-links li {
   list-style-type: none;
+}
+
+.social-links li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  color: var(--Blue);
+  text-decoration: none;
+  padding: 0.5rem;
+  border: 1px solid var(--Pale-Blue);
+  border-radius: 50%;
 }
 
 /* Extra small devices [iPhone SE - 375](phones, 600px and down) */
