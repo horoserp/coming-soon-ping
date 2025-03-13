@@ -54,7 +54,6 @@ body {
 
 .logo {
   margin: 2rem 0;
-  /* margin: 4.75rem 0; */
   overflow: auto;
 }
 
@@ -64,23 +63,18 @@ body {
 
 .title {
   font-size: 1.3rem;
-  /* font-size: 2rem; */
   margin-bottom: 1.25rem;
-  /* margin-bottom: 2.25rem; */
 }
 
 .content {
   margin-bottom: 1rem;
-  /* margin-bottom: 3.25rem; */
 }
 
 :where(#email, #submit) {
   width: 100%;
-  /* width: 80%; */
   font-size: 1.1rem;
   border-radius: 2rem;
   padding: 0.5rem 2rem;
-  /* padding: 1rem 2rem; */
 }
 
 #email {
@@ -96,26 +90,21 @@ body {
   color: white;
   background-color: var(--Blue);
   margin-bottom: 1rem;
-  /* margin-bottom: 4rem; */
   box-shadow: 0px 5px 20px -5px var(--Blue);
 }
 
 .stat-page {
   width: 80vw;
   height: 150px;
-  /* height: 500px; */
   object-fit: contain;
   margin-bottom: 1rem;
-  /* margin-bottom: 10rem; */
 }
 
 .social-links {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  /* gap: 1.5rem; */
   margin-bottom: 1.5rem;
-  /* margin-bottom: 3rem; */
 }
 
 .social-links li {
@@ -127,15 +116,11 @@ body {
   justify-content: center;
   align-items: center;
   width: 2rem;
-  /* width: 3rem; */
   height: 2rem;
-  /* height: 3rem; */
   font-size: 1rem;
-  /* font-size: 1.5rem; */
   color: var(--Blue);
   text-decoration: none;
   padding: 1rem;
-  /* padding: 0.5rem; */
   border: 1px solid var(--Pale-Blue);
   border-radius: 50%;
 }
@@ -162,4 +147,50 @@ body {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+}
+
+/* Design specs */
+@media only screen and (width: 750px) {
+  body {
+    padding: 10%;
+  }
+
+  .logo {
+    margin: 4.75rem 0;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2.25rem;
+  }
+
+  .content {
+    margin-bottom: 3.25rem;
+  }
+
+  :where(#email, #submit) {
+    width: 80%;
+    padding: 1rem 2rem;
+  }
+
+  #submit {
+    margin-bottom: 4rem;
+  }
+
+  .stat-page {
+    height: 500px;
+    margin-bottom: 10rem;
+  }
+
+  .social-links {
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .social-links li a {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
 }
