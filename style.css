@@ -90,6 +90,10 @@ body {
   }
 }
 
+#email.error {
+  border: 2px solid var(--Light-Red);
+}
+
 @media (hover: hover) {
   #submit:hover {
     background-color: var(--Green);
