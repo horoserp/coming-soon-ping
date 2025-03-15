@@ -32,6 +32,7 @@
   /* Secondary */
   --Pale-Blue: hsl(223, 100%, 88%);
   --Light-Red: hsl(354, 100%, 66%);
+  --Green: hsl(146, 59%, 51%);
 
   /* Neutral */
   --Gray: hsl(0, 0%, 59%);
@@ -86,6 +87,17 @@ body {
   &:focus {
     outline: 0;
     border: 2px solid var(--Blue);
+  }
+}
+
+@media (hover: hover) {
+  #submit:hover {
+    background-color: var(--Green);
+  }
+
+  .social-links li a:hover {
+    color: var(--Green);
+    border-color: var(--Green);
   }
 }
 
