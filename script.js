@@ -18,3 +18,11 @@ function clearError() {
   email.classList.remove("error");
   errorMessage.innerHTML = "";
 }
+
+function submitForm() {
+  alert(
+    "Thank you! We will send an email to " +
+      email.value +
+      " when the site is live!"
+  );
+}
