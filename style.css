@@ -137,32 +137,6 @@ body {
 @media only screen and (min-width: 600px) and (max-width: 767px) {
 }
 
-/* Medium devices [iPad Mini] (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  #form {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-  }
-
-  #email,
-  #submit {
-    width: auto;
-  }
-
-  .stat-page {
-    height: 500px;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
-
 /* Design specs */
 @media only screen and (width: 750px) {
   body {
@@ -206,5 +180,48 @@ body {
     height: 3rem;
     font-size: 1.5rem;
     padding: 0.5rem;
+  }
+}
+
+/* Medium devices [iPad Mini] (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .logo {
+    margin-top: 4rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .content {
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+  }
+
+  #form {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  #email,
+  #submit {
+    width: auto;
+  }
+
+  .stat-page {
+    height: 400px;
+    margin: 2rem 0 3rem 0;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1500px and up) */
+@media only screen and (min-width: 1500px) {
+  .logo {
+    margin: 2rem;
   }
 }
