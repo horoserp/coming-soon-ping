@@ -9,7 +9,6 @@ function postError() {
   if (email.value === "") {
     errorMessage.innerHTML = "Required!";
   } else {
-    console.log("Error");
     errorMessage.innerHTML = "Please provide a valid email address";
   }
 }
