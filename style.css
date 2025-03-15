@@ -130,6 +130,10 @@ body {
   padding: 1rem;
   border: 1px solid var(--Pale-Blue);
   border-radius: 50%;
+  &:active {
+    color: white;
+    background-color: var(--Blue);
+  }
 }
 
 .copyright {
