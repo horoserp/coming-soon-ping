@@ -101,6 +101,14 @@ body {
   }
 }
 
+#error-message {
+  font-style: italic;
+  font-size: 0.6rem;
+  color: var(--Light-Red);
+  position: relative;
+  bottom: 15px;
+}
+
 #submit {
   border: none;
   color: white;
@@ -241,6 +249,8 @@ body {
     height: 400px;
     margin: 2rem 0 3rem 0;
   }
+  /* bottom: 10px;
+  right: 170px; */
 }
 
 /* Extra large devices (large laptops and desktops, 1500px and up) */
