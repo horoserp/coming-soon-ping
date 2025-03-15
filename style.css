@@ -249,12 +249,17 @@ body {
     font-size: 1rem;
   }
 
+  #error-message {
+    width: 0px;
+    white-space: nowrap;
+    top: 53px;
+    right: 300px;
+  }
+
   .stat-page {
     height: 400px;
     margin: 2rem 0 3rem 0;
   }
-  /* bottom: 10px;
-  right: 170px; */
 }
 
 /* Extra large devices (large laptops and desktops, 1500px and up) */
