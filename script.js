@@ -2,9 +2,12 @@ const email = document.getElementById("email");
 const errorMessage = document.getElementById("error-message");
 
 email.addEventListener("invalid", postError);
-email.addEventListener("change", clearError);
+email.addEventListener("blur", clearError);
 
 function postError() {
+  email.required = false;
+  email.type = "text";
+  email.setSelectionRange(email.value.length, email.value.length);
   email.classList.add("error");
   if (email.value === "") {
     errorMessage.innerHTML = "Required!";
@@ -14,6 +17,8 @@ function postError() {
 }
 
 function clearError() {
+  email.required = true;
+  email.type = "email";
   email.classList.remove("error");
   errorMessage.innerHTML = "";
 }
