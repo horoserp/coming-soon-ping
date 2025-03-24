@@ -17,14 +17,14 @@
   ],
   "screenshots": [
     {
-      "src": "https://horoserp.github.io/coming-soon-ping/assets/images/desktop-design.jpg",
+      "src": "https://horoserp.github.io/coming-soon-ping/assets/images/desktop-screenshot.jpeg",
       "sizes": "1440x1024",
       "type": "image/png",
       "form_factor": "wide",
       "label": "Ping Coming Soon Desktop"
     },
     {
-      "src": "https://horoserp.github.io/coming-soon-ping/assets/images/mobile-design.jpg",
+      "src": "https://horoserp.github.io/coming-soon-ping/assets/images/mobile-screenshot.jpeg",
         "sizes": "750x1624",
         "type": "image/png",
         "form_factor": "narrow",
